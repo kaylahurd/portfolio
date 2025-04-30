@@ -36,8 +36,8 @@ export default function About() {
         >
           <h2 className="text-2xl font-semibold text-pink-900 dark:text-pink-100 mb-4">Hello! 👋</h2>
           <p className="text-pink-800 dark:text-pink-200 mb-4">
-            I'm a Computer Science student at Georgia State University with a passion for creating innovative solutions through technology. 
-            I specialize in full-stack development and have experience with both web and mobile applications.
+            I&apos;m a Computer Science student at Georgia State University with a passion for creating innovative solutions through technology. 
+            I specialize in full-stack development and have experience with both web and mobile applications. I love to code, my family, and to workout!
           </p>
         </motion.div>
 
@@ -119,12 +119,12 @@ export default function About() {
           <div>
             <h3 className="text-xl font-semibold text-pink-800 dark:text-pink-200">Bachelor of Science in Computer Science</h3>
             <p className="text-pink-700 dark:text-pink-300">Georgia State University • 2022 - Fall 2025</p>
-            <p className="text-pink-800 dark:text-pink-200 mt-2">GPA: 3.8/4.0</p>
+            <p className="text-pink-800 dark:text-pink-200">GPA: 3.8/4.0</p>
             <div className="mt-4">
-              <h4 className="font-semibold text-pink-800 dark:text-pink-200">Awards & Achievements</h4>
+              <h4 className="font-semibold text-pink-900 dark:text-pink-100 mb-2">Awards & Achievements</h4>
               <ul className="list-disc list-inside text-pink-800 dark:text-pink-200 mt-2">
                 <li>Hooch Excellence Award - 2022</li>
-                <li>Dean's List - Fall 2022-Fall 2024</li>
+                <li>Dean&apos;s List - Fall 2022-Fall 2024</li>
               </ul>
             </div>
           </div>

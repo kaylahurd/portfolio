@@ -35,7 +35,7 @@ const experiences = [
     period: 'May 2018 – Present',
     icon: HiDatabase,
     description: [
-      'Entered customers\' hearing data accurately and efficiently',
+      'Entered customers&apos; hearing data accurately and efficiently',
       'Managed email communication and ensured correct data entry by collaborating with other employees',
       'Authorized checks and handled bank deposits'
     ]

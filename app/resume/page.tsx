@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { HiDownload, HiAcademicCap, HiBriefcase, HiCode } from 'react-icons/hi';
+import { HiDownload, HiAcademicCap, HiBriefcase, HiCode, HiArrowRight } from 'react-icons/hi';
 
 export default function Resume() {
   const experience = [
@@ -217,7 +217,7 @@ export default function Resume() {
           <div className="bg-white/80 dark:bg-pink-800/80 p-6 rounded-lg shadow-md backdrop-blur-sm">
             <ul className="text-pink-800 dark:text-pink-200 space-y-2">
               <li>Hooch Excellence Award - 2022</li>
-              <li>Dean's List - Fall 2022-Fall 2024</li>
+              <li>Dean&apos;s List - Fall 2022-Fall 2024</li>
             </ul>
           </div>
         </section>
