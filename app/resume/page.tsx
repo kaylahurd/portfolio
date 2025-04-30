@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { HiDownload, HiAcademicCap, HiBriefcase, HiCode, HiArrowRight } from 'react-icons/hi';
 
 export default function Resume() {
   const experience = [

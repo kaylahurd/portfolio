@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { HiBriefcase, HiOfficeBuilding, HiDatabase, HiCode, HiChip } from 'react-icons/hi';
+import { HiBriefcase, HiOfficeBuilding, HiDatabase, HiCode } from 'react-icons/hi';
 
 const experiences = [
   {
