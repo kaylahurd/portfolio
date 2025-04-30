@@ -32,7 +32,7 @@ export default function Resume() {
       company: 'Environmental Tech. Corporation and Health Solutions',
       period: 'May 2018 – Present',
       responsibilities: [
-        'Entered customers\' hearing data accurately and efficiently',
+        'Entered customers&apos; hearing data accurately and efficiently',
         'Managed email communication and ensured correct data entry by collaborating with other employees',
         'Authorized checks and handled bank deposits'
       ],
@@ -81,30 +81,6 @@ export default function Resume() {
       ],
     },
   ];
-
-  const education = [
-    {
-      degree: 'Bachelor of Science in Computer Science',
-      school: 'University Name',
-      period: '2014 - 2018',
-      achievements: [
-        'Dean\'s List',
-        'Computer Science Club President',
-        'Research Assistant',
-      ],
-    },
-  ];
-
-  const skills = {
-    technical: [
-      'React', 'Next.js', 'TypeScript', 'Node.js',
-      'Python', 'SQL', 'Git', 'AWS',
-    ],
-    soft: [
-      'Leadership', 'Communication', 'Problem Solving',
-      'Team Collaboration', 'Project Management',
-    ],
-  };
 
   const projects = [
     {
@@ -166,58 +142,6 @@ export default function Resume() {
                 </ul>
               </motion.div>
             ))}
-          </div>
-        </section>
-
-        {/* Education Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-pink-800 dark:text-pink-200 mb-6">Education</h2>
-          
-          <div className="bg-white/80 dark:bg-pink-800/80 p-6 rounded-lg shadow-md backdrop-blur-sm">
-            <h3 className="text-xl font-semibold text-pink-900 dark:text-pink-100">Computer Science, B.S.</h3>
-            <p className="text-pink-700 dark:text-pink-300">Georgia State University • 2022 - Fall 2025</p>
-            <p className="mt-2 text-pink-800 dark:text-pink-200">GPA: 3.8/4.0</p>
-          </div>
-        </section>
-
-        {/* Skills Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-pink-800 dark:text-pink-200 mb-6">Skills</h2>
-          
-          <div className="bg-white/80 dark:bg-pink-800/80 p-6 rounded-lg shadow-md backdrop-blur-sm">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <div>
-                <h4 className="font-semibold text-pink-900 dark:text-pink-100 mb-2">Programming</h4>
-                <ul className="text-pink-800 dark:text-pink-200 space-y-1">
-                  <li>Python</li>
-                  <li>Java</li>
-                  <li>C++</li>
-                  <li>HTML/CSS/JavaScript</li>
-                  <li>Swift/SwiftUI</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold text-pink-900 dark:text-pink-100 mb-2">Development</h4>
-                <ul className="text-pink-800 dark:text-pink-200 space-y-1">
-                  <li>iOS Development</li>
-                  <li>SQL</li>
-                  <li>Power BI</li>
-                  <li>Microsoft Office</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Awards Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-pink-800 dark:text-pink-200 mb-6">Awards</h2>
-          
-          <div className="bg-white/80 dark:bg-pink-800/80 p-6 rounded-lg shadow-md backdrop-blur-sm">
-            <ul className="text-pink-800 dark:text-pink-200 space-y-2">
-              <li>Hooch Excellence Award - 2022</li>
-              <li>Dean&apos;s List - Fall 2022-Fall 2024</li>
-            </ul>
           </div>
         </section>
 

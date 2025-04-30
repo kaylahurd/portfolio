@@ -157,7 +157,7 @@ export default function Experience() {
                 </li>
                 <li className="text-pink-800 dark:text-pink-200 flex items-center">
                   <span className="mr-2 text-pink-600 dark:text-pink-300">•</span>
-                  Dean's List - Fall 2022-Fall 2024
+                  Dean&apos;s List - Fall 2022-Fall 2024
                 </li>
               </ul>
             </div>
