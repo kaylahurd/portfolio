@@ -71,7 +71,7 @@ export default function Contact() {
               <div>
                 <h2 className="text-lg font-semibold text-pink-900 dark:text-pink-100">Location</h2>
                 <p className="text-pink-700 dark:text-pink-200">
-                  125 Ted Turner Drive SW, Atlanta GA, 30303
+                  Atlanta, GA
                 </p>
               </div>
             </motion.div>
