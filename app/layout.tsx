@@ -6,8 +6,8 @@ import Navbar from "./components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Hi! I'm Kayla Hurd, a Computer Science student at Georgia State University!",
+  title: 'Kayla Hurd - Portfolio',
+  description: 'Computer Science student at Georgia State University with a passion for software development and robotics. Experienced in JavaScript, Python, and Java.',
 };
 
 export default function RootLayout({
