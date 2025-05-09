@@ -20,7 +20,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed w-full z-50 bg-pink-600 dark:bg-pink-900 shadow-lg">
+    <nav className="fixed w-full z-50 bg-custom-pink-500 dark:bg-custom-pink-800 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -40,8 +40,8 @@ export default function Navbar() {
                     href={item.href}
                     className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                       isActive
-                        ? 'bg-pink-700 dark:bg-pink-800 text-white'
-                        : 'text-pink-100 hover:bg-pink-500 dark:hover:bg-pink-700 hover:text-white'
+                        ? 'bg-custom-pink-600 dark:bg-custom-pink-700 text-white'
+                        : 'text-white hover:bg-custom-pink-400 dark:hover:bg-custom-pink-600'
                     }`}
                   >
                     {item.name}
@@ -55,7 +55,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-pink-100 hover:text-white hover:bg-pink-500 dark:hover:bg-pink-700 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-custom-pink-400 dark:hover:bg-custom-pink-600 focus:outline-none"
             >
               {isOpen ? <HiX className="h-6 w-6" /> : <HiMenu className="h-6 w-6" />}
             </button>
@@ -70,7 +70,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-pink-600 dark:bg-pink-900"
+            className="md:hidden bg-custom-pink-500 dark:bg-custom-pink-800"
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navigation.map((item) => {
@@ -81,8 +81,8 @@ export default function Navbar() {
                     href={item.href}
                     className={`block px-3 py-2 rounded-md text-base font-medium ${
                       isActive
-                        ? 'bg-pink-700 dark:bg-pink-800 text-white'
-                        : 'text-pink-100 hover:bg-pink-500 dark:hover:bg-pink-700 hover:text-white'
+                        ? 'bg-custom-pink-600 dark:bg-custom-pink-700 text-white'
+                        : 'text-white hover:bg-custom-pink-400 dark:hover:bg-custom-pink-600'
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
