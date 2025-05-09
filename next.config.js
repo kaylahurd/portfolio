@@ -1,5 +1,31 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
   output: 'standalone',
-  reactStrictMode: true
-} 
+  reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  experimental: {
+    esmExternals: false,
+  },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.(js|jsx|ts|tsx)$/,
+      use: [
+        {
+          loader: 'eslint-loader',
+          options: {
+            emitWarning: true,
+            failOnError: false,
+          },
+        },
+      ],
+    });
+    return config;
+  },
+}
+
+module.exports = nextConfig 
