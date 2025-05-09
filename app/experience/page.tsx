@@ -101,7 +101,7 @@ export default function Experience() {
         >
           <h1 className="text-4xl font-bold text-custom-black-50 mb-4">My Experience</h1>
           <p className="text-lg text-custom-black-200">
-            Here's a timeline of my professional journey
+            Here&apos;s a timeline of my professional journey
           </p>
         </motion.div>
 
@@ -139,134 +139,6 @@ export default function Experience() {
             </motion.div>
           ))}
         </div>
-
-        {/* Education Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="mt-12"
-        >
-          <h2 className="text-3xl font-bold text-pink-900 dark:text-pink-100 mb-6 text-center">Education</h2>
-          <div className="bg-white/80 dark:bg-pink-800/80 rounded-lg shadow-md backdrop-blur-sm p-6">
-            <h3 className="text-xl font-semibold text-pink-900 dark:text-pink-100">Computer Science, B.S.</h3>
-            <p className="text-pink-700 dark:text-pink-300 mb-2">Georgia State University • 2022 - Fall 2025</p>
-            <p className="text-pink-800 dark:text-pink-200">GPA: 3.8/4.0</p>
-            <div className="mt-4">
-              <h4 className="font-semibold text-pink-900 dark:text-pink-100 mb-2">Awards & Achievements</h4>
-              <ul className="space-y-2">
-                <li className="text-pink-800 dark:text-pink-200 flex items-center">
-                  <span className="mr-2 text-pink-600 dark:text-pink-300">•</span>
-                  Hooch Excellence Award - 2022
-                </li>
-                <li className="text-pink-800 dark:text-pink-200 flex items-center">
-                  <span className="mr-2 text-pink-600 dark:text-pink-300">•</span>
-                  Dean&apos;s List - Fall 2022-Fall 2024
-                </li>
-              </ul>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Personal Projects Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-          className="mt-12"
-        >
-          <h2 className="text-3xl font-bold text-pink-900 dark:text-pink-100 mb-6 text-center">Personal Projects</h2>
-          <div className="bg-white/80 dark:bg-pink-800/80 rounded-lg shadow-md backdrop-blur-sm p-6">
-            <div className="space-y-6">
-              <div>
-                <div className="flex items-center mb-2">
-                  <span className="mr-2 text-pink-600 dark:text-pink-300">•</span>
-                  <h3 className="text-xl font-semibold text-pink-900 dark:text-pink-100">FTC Robotics Competition Project</h3>
-                </div>
-                <div className="ml-6">
-                  <p className="text-pink-800 dark:text-pink-200 mb-2">
-                    <span className="font-semibold text-pink-900 dark:text-pink-100">Languages:</span> JavaScript
-                  </p>
-                  <p className="text-pink-800 dark:text-pink-200 mb-2">
-                    <span className="font-semibold text-pink-900 dark:text-pink-100">Skills:</span> Robotics, Team Leadership, Project Management
-                  </p>
-                  <p className="text-pink-800 dark:text-pink-200">
-                    <span className="font-semibold text-pink-900 dark:text-pink-100">Description:</span> Led the development of competition robot software, implementing autonomous routines and precise control systems. Member of an all-girls team recognized as one of the top teams in the country.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <div className="flex items-center mb-2">
-                  <span className="mr-2 text-pink-600 dark:text-pink-300">•</span>
-                  <h3 className="text-xl font-semibold text-pink-900 dark:text-pink-100">SMS Task Reminder App</h3>
-                </div>
-                <div className="ml-6">
-                  <p className="text-pink-800 dark:text-pink-200 mb-2">
-                    <span className="font-semibold text-pink-900 dark:text-pink-100">Languages:</span> Swift
-                  </p>
-                  <p className="text-pink-800 dark:text-pink-200 mb-2">
-                    <span className="font-semibold text-pink-900 dark:text-pink-100">Skills:</span> SwiftUI, Twilio API, iOS Development
-                  </p>
-                  <p className="text-pink-800 dark:text-pink-200">
-                    <span className="font-semibold text-pink-900 dark:text-pink-100">Description:</span> A productivity app that sends SMS reminders for scheduled tasks. Features include task categorization, repeating reminders, and persistent task storage.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <div className="flex items-center mb-2">
-                  <span className="mr-2 text-pink-600 dark:text-pink-300">•</span>
-                  <h3 className="text-xl font-semibold text-pink-900 dark:text-pink-100">Calorie Tracker App</h3>
-                </div>
-                <div className="ml-6">
-                  <p className="text-pink-800 dark:text-pink-200 mb-2">
-                    <span className="font-semibold text-pink-900 dark:text-pink-100">Languages:</span> Swift
-                  </p>
-                  <p className="text-pink-800 dark:text-pink-200 mb-2">
-                    <span className="font-semibold text-pink-900 dark:text-pink-100">Skills:</span> XCode, iOS Development
-                  </p>
-                  <p className="text-pink-800 dark:text-pink-200">
-                    <span className="font-semibold text-pink-900 dark:text-pink-100">Description:</span> Created an iOS app for tracking calories and monitoring nutrition goals using Swift and XCode.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <div className="flex items-center mb-2">
-                  <span className="mr-2 text-pink-600 dark:text-pink-300">•</span>
-                  <h3 className="text-xl font-semibold text-pink-900 dark:text-pink-100">Student Management System</h3>
-                </div>
-                <div className="ml-6">
-                  <p className="text-pink-800 dark:text-pink-200 mb-2">
-                    <span className="font-semibold text-pink-900 dark:text-pink-100">Languages:</span> SQL
-                  </p>
-                  <p className="text-pink-800 dark:text-pink-200 mb-2">
-                    <span className="font-semibold text-pink-900 dark:text-pink-100">Skills:</span> MySQL, DBeaver, Database Design
-                  </p>
-                  <p className="text-pink-800 dark:text-pink-200">
-                    <span className="font-semibold text-pink-900 dark:text-pink-100">Description:</span> Developed a MySQL database system for managing student information, course enrollment, and grades.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <div className="flex items-center mb-2">
-                  <span className="mr-2 text-pink-600 dark:text-pink-300">•</span>
-                  <h3 className="text-xl font-semibold text-pink-900 dark:text-pink-100">Open Wheelchair Project</h3>
-                </div>
-                <div className="ml-6">
-                  <p className="text-pink-800 dark:text-pink-200 mb-2">
-                    <span className="font-semibold text-pink-900 dark:text-pink-100">Skills:</span> Hardware Engineering, Community Service
-                  </p>
-                  <p className="text-pink-800 dark:text-pink-200">
-                    <span className="font-semibold text-pink-900 dark:text-pink-100">Description:</span> Contributed to building motorized wheelchairs using PVC materials for children in need.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </div>
   );
