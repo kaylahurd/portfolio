@@ -91,45 +91,49 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-pink-100 dark:from-pink-900 dark:to-pink-800 py-12 px-4 sm:px-6 lg:px-8">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="max-w-4xl mx-auto"
-      >
-        <h1 className="text-4xl font-bold text-pink-900 dark:text-pink-100 mb-8 text-center">Work Experience</h1>
-        
-        <div className="space-y-8">
+    <div className="min-h-screen bg-custom-black-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-12"
+        >
+          <h1 className="text-4xl font-bold text-custom-black-50 mb-4">My Experience</h1>
+          <p className="text-lg text-custom-black-200">
+            Here's a timeline of my professional journey
+          </p>
+        </motion.div>
+
+        <div className="space-y-12">
           {experiences.map((experience, index) => (
             <motion.div
               key={experience.title}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-white/80 dark:bg-pink-800/80 rounded-lg shadow-md backdrop-blur-sm p-6"
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="bg-custom-black-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 mt-1">
-                  <experience.icon className="h-8 w-8 text-pink-600 dark:text-pink-300" />
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <experience.icon className="h-8 w-8 text-custom-pink-500" />
                 </div>
-                <div className="flex-1">
-                  <h2 className="text-xl font-semibold text-pink-900 dark:text-pink-100">{experience.title}</h2>
-                  <p className="text-pink-700 dark:text-pink-300 mb-4">{experience.company} • {experience.period}</p>
-                  <ul className="space-y-3">
-                    {experience.description.map((item, i) => (
-                      <motion.li
-                        key={i}
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.1 + i * 0.05 }}
-                        className="text-pink-800 dark:text-pink-200 flex items-start"
+                <div className="ml-4">
+                  <h3 className="text-xl font-semibold text-custom-black-50">
+                    {experience.title}
+                  </h3>
+                  <p className="text-custom-pink-500 mb-2">{experience.company}</p>
+                  <p className="text-custom-black-200 mb-4">{experience.period}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {experience.description.map((item) => (
+                      <span
+                        key={item}
+                        className="px-3 py-1 text-sm bg-custom-black-700 text-custom-pink-500 rounded-full"
                       >
-                        <span className="mr-2 text-pink-600 dark:text-pink-300">•</span>
                         {item}
-                      </motion.li>
+                      </span>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -263,7 +267,7 @@ export default function Experience() {
             </div>
           </div>
         </motion.div>
-      </motion.div>
+      </div>
     </div>
   );
 } 

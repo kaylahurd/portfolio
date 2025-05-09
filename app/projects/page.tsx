@@ -1,10 +1,22 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { HiCode, HiCube, HiChip, HiDatabase } from 'react-icons/hi';
+import { HiCode, HiCube, HiChip, HiDatabase, HiExternalLink } from 'react-icons/hi';
 import Image from 'next/image';
+import { IconType } from 'react-icons';
 
-const projects = [
+type Project = {
+  title: string;
+  description: string;
+  icon: IconType;
+  type: string;
+  tech: string[];
+  image: string;
+  github?: string;
+  demo?: string;
+};
+
+const projects: Project[] = [
   {
     title: 'FTC Robotics Competition',
     description: 'Led programming for an all-girls robotics team that was recognized as one of the top teams in the country. Developed JavaScript programs for robot control, managed team budget and sponsor relations, and maintained safety protocols during competitions.',
@@ -65,25 +77,30 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-pink-100 dark:from-pink-900 dark:to-pink-800 py-12 px-4 sm:px-6 lg:px-8">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="max-w-7xl mx-auto"
-      >
-        <h1 className="text-4xl font-bold text-pink-900 dark:text-pink-100 mb-8 text-center">My Projects</h1>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="min-h-screen bg-custom-black-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-12"
+        >
+          <h1 className="text-4xl font-bold text-custom-black-50 mb-4">My Projects</h1>
+          <p className="text-lg text-custom-black-200">
+            Here are some of the projects I've worked on
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-white/80 dark:bg-pink-800/80 rounded-lg shadow-md backdrop-blur-sm overflow-hidden"
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="bg-custom-black-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className="relative h-48 w-full">
+              <div className="relative h-48">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -92,27 +109,47 @@ export default function Projects() {
                 />
               </div>
               <div className="p-6">
-                <div className="flex items-center mb-4">
-                  <project.icon className="h-6 w-6 text-pink-600 dark:text-pink-300 mr-2" />
-                  <h2 className="text-xl font-semibold text-pink-900 dark:text-pink-100">{project.title}</h2>
-                </div>
-                <p className="text-pink-700 dark:text-pink-200 mb-4">{project.description}</p>
+                <h3 className="text-xl font-semibold text-custom-black-50 mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-custom-black-200 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-pink-100 dark:bg-pink-700 text-pink-800 dark:text-pink-100 rounded-full text-sm"
+                      className="px-3 py-1 text-sm bg-custom-black-700 text-custom-pink-500 rounded-full"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
-                <p className="text-sm text-pink-600 dark:text-pink-300">{project.type}</p>
+                <div className="flex gap-4">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-custom-pink-500 hover:text-custom-pink-400"
+                    >
+                      <HiCode size={24} />
+                    </a>
+                  )}
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-custom-pink-500 hover:text-custom-pink-400"
+                    >
+                      <HiExternalLink size={24} />
+                    </a>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 } 
