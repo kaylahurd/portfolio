@@ -35,7 +35,7 @@ const projects: Project[] = [
   },
   {
     title: 'SMS Task Reminder App',
-    description: 'A productivity app that sends SMS reminders for scheduled tasks. Features include task categorization, repeating reminders, and persistent task storage using Swift\'s local storage.',
+    description: 'A productivity app that sends SMS reminders for scheduled tasks. Features include task categorization, repeating reminders, and persistent task storage using Swift&apos;s local storage.',
     icon: HiCode,
     type: 'Personal Project',
     tech: ['Swift', 'SwiftUI', 'Twilio API', 'iOS Development'],

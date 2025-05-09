@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { HiMail, HiPhone, HiLocationMarker, HiCode, HiUser } from 'react-icons/hi';
+import { HiMail, HiLocationMarker, HiCode, HiUser } from 'react-icons/hi';
 
 export default function Contact() {
   return (
