@@ -7,7 +7,10 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   output: 'standalone',
-  reactStrictMode: true
+  reactStrictMode: true,
+  experimental: {
+    esmExternals: false,
+  },
 }
 
 module.exports = nextConfig 
