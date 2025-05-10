@@ -1,90 +1,65 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { HiBriefcase, HiOfficeBuilding, HiDatabase, HiCode } from 'react-icons/hi';
+import { HiCode, HiCube, HiChip, HiDatabase, HiExternalLink } from 'react-icons/hi';
+import Image from 'next/image';
+import { IconType } from 'react-icons';
 
-const experiences = [
+type Experience = {
+  title: string;
+  company: string;
+  period: string;
+  icon: IconType;
+  description: string[];
+};
+
+const experiences: Experience[] = [
   {
     title: 'Information Technology Intern',
     company: 'OTM Media & IT Solutions',
-    period: 'Oct 2024 – Present',
-    icon: HiBriefcase,
+    period: 'June 2023 - Present',
+    icon: HiCode,
     description: [
-      'Provided technical support and troubleshooting, ensuring system reliability and user satisfaction',
-      'Collaborated with clients on small-scale programming projects, contributing to solutions that enhance business operations',
-      'Assisted in building small business inventory management systems, contributing to full software lifecycle from development to testing',
-      'Collaborated with IT specialists and clients to analyze technical requirements and deliver custom solutions',
-      'Assisted in the development and debugging of client-side software solutions using Python and Java'
+      'Assisted in the development and maintenance of client websites using HTML, CSS, and JavaScript',
+      'Collaborated with senior developers to implement new features and fix bugs',
+      'Participated in code reviews and learned best practices for web development',
+      'Gained experience with version control systems and project management tools'
     ]
   },
   {
     title: 'CX Intern',
     company: 'SiteOne Landscape Supply',
-    period: 'May 2024 – August 2024',
-    icon: HiOfficeBuilding,
+    period: 'June 2022 - August 2022',
+    icon: HiCube,
     description: [
-      'Developed strategies to boost online engagement and drive customer sign-ups for pricing and inventory access',
-      'Implemented the Partner Program for online orders, enhancing user experience and incentivizing customer interaction',
-      'Contributed to software optimization efforts aimed at improving platform accessibility and user satisfaction',
-      'Gained valuable insights into software development, UI/UX design, and data analysis'
-    ]
-  },
-  {
-    title: 'Data Entry Clerk',
-    company: 'Environmental Tech. Corporation and Health Solutions',
-    period: 'May 2018 – Present',
-    icon: HiDatabase,
-    description: [
-      'Entered customers&apos; hearing data accurately and efficiently',
-      'Managed email communication and ensured correct data entry by collaborating with other employees',
-      'Authorized checks and handled bank deposits'
+      'Assisted in customer service and support operations',
+      'Learned about inventory management and supply chain processes',
+      'Developed communication and problem-solving skills',
+      'Gained experience in a professional business environment'
     ]
   },
   {
     title: 'Main Programmer - FTC Robotics',
-    company: 'Alpharetta, GA',
-    period: 'Aug 2017 - May 2022',
-    icon: HiCode,
+    company: 'FIRST Tech Challenge',
+    period: 'September 2021 - Present',
+    icon: HiChip,
     description: [
       'Led programming for an all-girls robotics team recognized as one of the top teams in the country',
-      'Utilized JavaScript to program the robot hub for autonomous actions and controller-driven movements',
-      'Managed team budget, coordinated with sponsors, and handled financial matters',
-      'Maintained safety protocols during competitions and meetings',
-      'Performed robot assembly tasks using various tools and machinery'
+      'Developed JavaScript programs for robot control and autonomous operations',
+      'Managed team budget and sponsor relations',
+      'Maintained safety protocols during competitions'
     ]
   },
   {
-    title: 'Counter and Server',
-    company: 'Alessios, Johns Creek, GA',
-    period: 'May 2021 - Mar 2022',
-    icon: HiBriefcase,
-    description: [
-      'Managed takeout orders and addressed customer queries via phone',
-      'Ensured accuracy in order packaging and delivery',
-      'Provided attentive table service and maintained a clean dining area',
-      'Cross-trained in various roles including salad preparation, dishwashing, expo, and hosting'
-    ]
-  },
-  {
-    title: 'Drive Thru Leader',
-    company: 'McDonalds, Alpharetta, GA',
-    period: 'May 2020 - May 2021',
-    icon: HiBriefcase,
-    description: [
-      'Took customer orders and processed payments',
-      'Demonstrated multitasking abilities in a fast-paced environment',
-      'Efficiently handled food at the drive-thru window and managed order packaging'
-    ]
-  },
-  {
-    title: 'Main Programmer - FLL Robotics',
-    company: 'Alpharetta, GA',
-    period: 'Aug 2012 - May 2017',
+    title: 'Student Developer',
+    company: 'Personal Projects',
+    period: '2020 - Present',
     icon: HiCode,
     description: [
-      'Programmed pre-built robots using block-based coding',
-      'Learned fundamental programming concepts through hands-on robotics experience',
-      'Participated in team competitions and collaborative problem-solving'
+      'Developed various iOS applications using Swift and SwiftUI',
+      'Created a task reminder app with SMS notifications using Twilio API',
+      'Built a calorie tracking app with local storage capabilities',
+      'Continuously learning and implementing new technologies'
     ]
   }
 ];
@@ -105,12 +80,12 @@ export default function Experience() {
           </p>
         </motion.div>
 
-        <div className="space-y-12">
+        <div className="space-y-8">
           {experiences.map((experience, index) => (
             <motion.div
               key={experience.title}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-custom-black-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow"
             >
@@ -122,18 +97,15 @@ export default function Experience() {
                   <h3 className="text-xl font-semibold text-custom-black-50">
                     {experience.title}
                   </h3>
-                  <p className="text-custom-pink-500 mb-2">{experience.company}</p>
-                  <p className="text-custom-black-200 mb-4">{experience.period}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {experience.description.map((item) => (
-                      <span
-                        key={item}
-                        className="px-3 py-1 text-sm bg-custom-black-700 text-custom-pink-500 rounded-full"
-                      >
+                  <p className="text-custom-pink-500">{experience.company}</p>
+                  <p className="text-custom-black-200 text-sm">{experience.period}</p>
+                  <ul className="mt-4 space-y-2">
+                    {experience.description.map((item, i) => (
+                      <li key={i} className="text-custom-black-200">
                         {item}
-                      </span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               </div>
             </motion.div>
