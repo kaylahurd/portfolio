@@ -124,7 +124,7 @@ export default function About() {
               <h4 className="font-semibold text-custom-black-50 mb-2">Awards & Achievements</h4>
               <ul className="list-disc list-inside text-custom-black-200 mt-2">
                 <li>Hooch Excellence Award - 2022</li>
-                <li>Dean&apos;s List - Fall 2022-Fall 2024</li>
+                <li>Dean&apos;s List - Fall 2022- Spring 2025</li>
               </ul>
             </div>
           </div>
