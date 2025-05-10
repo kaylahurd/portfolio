@@ -9,7 +9,7 @@ interface ProfileImageProps {
 
 const ProfileImage = ({ priority = false, className = '' }: ProfileImageProps) => {
   return (
-    <div className={`relative w-48 h-48 rounded-full overflow-hidden ring-4 ring-custom-pink-200 dark:ring-custom-pink-700 ${className}`}>
+    <div className={`relative w-48 h-48 rounded-full overflow-hidden ring-4 ring-custom-pink-500 ${className}`}>
       <Image
         src="/profile.jpg"
         alt="Profile picture"
