@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Kayla Hurd - Portfolio',
-  description: 'Computer Science student at Georgia State University with a passion for software development and robotics. Experienced in JavaScript, Python, and Java.',
+  description: 'Computer Science student at Georgia State University with a passion for software development and robotics. Experienced in JavaScript, Python, Java, and Swift.',
 };
 
 export default function RootLayout({
