@@ -32,7 +32,7 @@ export default function Resume() {
       company: 'Environmental Tech. Corporation and Health Solutions',
       period: 'May 2018 – Present',
       responsibilities: [
-        'Entered customers&apos; hearing data accurately and efficiently',
+        'Entered customers&apos;s hearing data accurately and efficiently',
         'Managed email communication and ensured correct data entry by collaborating with other employees',
         'Authorized checks and handled bank deposits'
       ],
