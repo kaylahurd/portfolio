@@ -87,7 +87,7 @@ export default function Projects() {
         >
           <h1 className="text-4xl font-bold text-custom-black-50 mb-4">My Projects</h1>
           <p className="text-lg text-custom-black-200">
-            Here are some of the projects I&apos;ve worked on
+            Here are some of the projects I&#39;ve worked on
           </p>
         </motion.div>
 
