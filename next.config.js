@@ -4,6 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
+    dirs: ['app', 'components', 'pages']
   },
   typescript: {
     ignoreBuildErrors: true,
