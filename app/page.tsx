@@ -19,7 +19,7 @@ export default function Home() {
           >
             <ProfileImage priority className="mb-8" />
             <h1 className="text-4xl sm:text-6xl font-bold mb-6 text-custom-black-50">
-              Hi! My name is Kayla Hurd.
+              Hi&apos;! My name is Kayla Hurd.
             </h1>
             <p className="text-xl sm:text-2xl text-custom-black-200 mb-8">
               Senior Computer Science Student at Georgia State University
