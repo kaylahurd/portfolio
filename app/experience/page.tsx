@@ -77,7 +77,7 @@ export default function Experience() {
         >
           <h1 className="text-4xl font-bold text-custom-black-50 mb-4">My Experience</h1>
           <p className="text-lg text-custom-black-200">
-            Here&rsquo;s a timeline of my professional journey
+            Here&apos;s a timeline of my professional journey
           </p>
         </motion.div>
 
