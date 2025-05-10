@@ -111,18 +111,18 @@ export default function Resume() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-pink-100 dark:from-pink-900 dark:to-pink-800 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-custom-black-900">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="max-w-4xl mx-auto"
+        className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
       >
-        <h1 className="text-4xl font-bold text-pink-900 dark:text-pink-100 mb-8">Resume</h1>
+        <h1 className="text-4xl font-bold text-custom-black-50 mb-8">Resume</h1>
         
         {/* Experience Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-pink-800 dark:text-pink-200 mb-6">Professional Experience</h2>
+          <h2 className="text-2xl font-semibold text-custom-black-50 mb-6">Professional Experience</h2>
           
           <div className="space-y-8">
             {experience.map((job, index) => (
@@ -131,11 +131,11 @@ export default function Resume() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white/80 dark:bg-pink-800/80 p-6 rounded-lg shadow-md backdrop-blur-sm"
+                className="bg-custom-black-800 p-6 rounded-lg shadow-md"
               >
-                <h3 className="text-xl font-semibold text-pink-900 dark:text-pink-100">{job.title}</h3>
-                <p className="text-pink-700 dark:text-pink-300">{job.company} • {job.period}</p>
-                <ul className="mt-4 list-disc list-inside text-pink-800 dark:text-pink-200 space-y-2">
+                <h3 className="text-xl font-semibold text-custom-black-50">{job.title}</h3>
+                <p className="text-custom-pink-500">{job.company} • {job.period}</p>
+                <ul className="mt-4 list-disc list-inside text-custom-black-200 space-y-2">
                   {job.responsibilities.map((resp, i) => (
                     <li key={i}>{resp}</li>
                   ))}
@@ -147,7 +147,7 @@ export default function Resume() {
 
         {/* Projects Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-pink-800 dark:text-pink-200 mb-6">Projects</h2>
+          <h2 className="text-2xl font-semibold text-custom-black-50 mb-6">Projects</h2>
           
           <div className="space-y-6">
             {projects.map((project, index) => (
@@ -156,15 +156,15 @@ export default function Resume() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white/80 dark:bg-pink-800/80 p-6 rounded-lg shadow-md backdrop-blur-sm"
+                className="bg-custom-black-800 p-6 rounded-lg shadow-md"
               >
-                <h3 className="text-xl font-semibold text-pink-900 dark:text-pink-100">{project.title}</h3>
-                <p className="text-pink-800 dark:text-pink-200 mt-2">{project.description}</p>
+                <h3 className="text-xl font-semibold text-custom-black-50">{project.title}</h3>
+                <p className="text-custom-black-200 mt-2">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mt-3">
                   {project.technologies.map((tech, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 bg-pink-100 dark:bg-pink-700 text-pink-800 dark:text-pink-100 rounded-full text-sm"
+                      className="px-3 py-1 bg-custom-black-700 text-custom-pink-500 rounded-full text-sm"
                     >
                       {tech}
                     </span>
@@ -177,7 +177,7 @@ export default function Resume() {
 
         {/* Download Resume Button */}
         <div className="text-center">
-          <button className="bg-pink-600 text-white px-6 py-3 rounded-md hover:bg-pink-700 transition-colors shadow-md hover:shadow-lg">
+          <button className="bg-custom-pink-500 text-white px-6 py-3 rounded-md hover:bg-custom-pink-600 transition-colors shadow-md hover:shadow-lg">
             Download Resume PDF
           </button>
         </div>
