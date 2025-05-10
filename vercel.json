@@ -2,15 +2,16 @@
   "version": 2,
   "buildCommand": "npm run build",
   "installCommand": "npm install",
-  "framework": "nextjs",
+  "framework": "nextjs@14.1.0",
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/next",
+      "use": "@vercel/next@14.1.0",
       "config": {
         "buildCommand": "npm run build",
         "installCommand": "npm install",
-        "outputDirectory": ".next"
+        "outputDirectory": ".next",
+        "framework": "nextjs@14.1.0"
       }
     }
   ]
