@@ -56,17 +56,19 @@ export default function Contact() {
                 href="https://github.com/kaylahurd"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-custom-black-200 hover:text-custom-pink-500 transition-colors"
+                className="text-custom-black-200 hover:text-custom-pink-500 transition-colors flex items-center"
               >
-                <HiCode className="h-6 w-6" />
+                <HiCode className="h-6 w-6 mr-2" />
+                GitHub
               </a>
               <a
                 href="https://www.linkedin.com/in/kayla-hurd"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-custom-black-200 hover:text-custom-pink-500 transition-colors"
+                className="text-custom-black-200 hover:text-custom-pink-500 transition-colors flex items-center"
               >
-                <HiUser className="h-6 w-6" />
+                <HiUser className="h-6 w-6 mr-2" />
+                LinkedIn
               </a>
             </div>
           </motion.div>
