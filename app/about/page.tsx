@@ -34,7 +34,7 @@ export default function About() {
           transition={{ delay: 0.1 }}
           className="bg-custom-black-800 rounded-lg shadow-md p-6 mb-8"
         >
-          <h2 className="text-2xl font-semibold text-custom-black-50 mb-4">Hello! 👋</h2>
+          <h2 className="text-2xl font-semibold text-custom-black-50 mb-4">Hello!</h2>
           <p className="text-custom-black-200 mb-4">
             I&apos;m a Computer Science student at Georgia State University with a passion for creating innovative solutions through technology. 
             I specialize in full-stack development and have experience with both web and mobile applications. I love to code, my family, and to workout!
