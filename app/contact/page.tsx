@@ -53,7 +53,7 @@ export default function Contact() {
             <h2 className="text-2xl font-semibold text-custom-black-50 mb-6">Connect with Me</h2>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/kaylahurd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-custom-black-200 hover:text-custom-pink-500 transition-colors"
@@ -61,7 +61,7 @@ export default function Contact() {
                 <HiCode className="h-6 w-6" />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/kayla-hurd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-custom-black-200 hover:text-custom-pink-500 transition-colors"
