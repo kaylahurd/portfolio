@@ -2,7 +2,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { HiCode, HiCube, HiChip, HiDatabase, HiExternalLink } from 'react-icons/hi';
+import { HiCode, HiCube, HiChip, HiDatabase, HiExternalLink, HiBriefcase, HiSupport } from 'react-icons/hi';
 import Image from 'next/image';
 import { IconType } from 'react-icons';
 
@@ -10,57 +10,47 @@ type Experience = {
   title: string;
   company: string;
   period: string;
+  location: string;
   icon: IconType;
   description: string[];
 };
 
 const experiences: Experience[] = [
   {
-    title: 'Information Technology Intern',
-    company: 'OTM Media & IT Solutions',
-    period: 'June 2023 - Present',
+    title: 'Technology Intern',
+    company: 'LocumTenens.com',
+    period: 'May 2025 – Present',
+    location: 'Alpharetta, GA',
     icon: HiCode,
     description: [
-      'Assisted in the development and maintenance of client websites using HTML, CSS, and JavaScript',
-      'Collaborated with senior developers to implement new features and fix bugs',
-      'Participated in code reviews and learned best practices for web development',
-      'Gained experience with version control systems and project management tools'
+      'Engineered and deployed a full-stack inventory management web application with React, Flask, and Supabase, significantly streamlining asset tracking and reducing manual data entry by 70%.',
+      'Provided advanced technical support to over 300 telehealth providers, leveraging Salesforce for case management and Bomgar for remote troubleshooting, resolving complex software and access issues efficiently.',
+      'Created detailed documentation and instructional guides for internal systems including LT Telehealth and LTOE, enhancing user proficiency and reducing repeat support requests by 25%.'
+    ]
+  },
+  {
+    title: 'Information Technology Intern',
+    company: 'OTM Media and IT Solutions',
+    period: 'Oct 2024 – May 2025',
+    location: 'Smyrna, GA',
+    icon: HiSupport,
+    description: [
+      'Provided technical support and troubleshooting, ensuring system reliability and user satisfaction.',
+      'Collaborated with IT specialists and clients to analyze technical requirements and deliver custom solutions.',
+      'Assisted in building small business inventory management systems, contributing to full software lifecycle.'
     ]
   },
   {
     title: 'CX Intern',
     company: 'SiteOne Landscape Supply',
-    period: 'June 2022 - August 2022',
-    icon: HiCube,
+    period: 'May 2024 – Aug 2024',
+    location: 'Alpharetta, GA',
+    icon: HiBriefcase,
     description: [
-      'Assisted in customer service and support operations',
-      'Learned about inventory management and supply chain processes',
-      'Developed communication and problem-solving skills',
-      'Gained experience in a professional business environment'
-    ]
-  },
-  {
-    title: 'Main Programmer - FTC Robotics',
-    company: 'FIRST Tech Challenge',
-    period: 'September 2021 - Present',
-    icon: HiChip,
-    description: [
-      'Led programming for an all-girls robotics team recognized as one of the top teams in the country',
-      'Developed JavaScript programs for robot control and autonomous operations',
-      'Managed team budget and sponsor relations',
-      'Maintained safety protocols during competitions'
-    ]
-  },
-  {
-    title: 'Student Developer',
-    company: 'Personal Projects',
-    period: '2020 - Present',
-    icon: HiCode,
-    description: [
-      'Developed various iOS applications using Swift and SwiftUI',
-      'Created a task reminder app with SMS notifications using Twilio API',
-      'Built a calorie tracking app with local storage capabilities',
-      'Continuously learning and implementing new technologies'
+      'Utilized Salesforce to streamline prospect management and customer data analysis, enhancing lead processing and customer engagement.',
+      'Collaborated on cross-functional teams to identify process improvements in the e-commerce workflow, proposing solutions implemented in subsequent project updates.',
+      'Supported the launch of the Partner Program for online orders, improving customer engagement and site usage.',
+      'Collaborated with the digital product team to improve customer experience on the e-commerce platform.'
     ]
   }
 ];
@@ -77,7 +67,7 @@ export default function Experience() {
         >
           <h1 className="text-4xl font-bold text-custom-black-50 mb-4">My Experience</h1>
           <p className="text-lg text-custom-black-200">
-            Heres a timeline of my professional journey
+            Here&apos;s a timeline of my professional journey
           </p>
         </motion.div>
 
@@ -94,12 +84,12 @@ export default function Experience() {
                 <div className="flex-shrink-0">
                   <experience.icon className="h-8 w-8 text-custom-pink-500" />
                 </div>
-                <div className="ml-4">
+                <div className="ml-4 flex-1">
                   <h3 className="text-xl font-semibold text-custom-black-50">
                     {experience.title}
                   </h3>
                   <p className="text-custom-pink-500">{experience.company}</p>
-                  <p className="text-custom-black-200 text-sm">{experience.period}</p>
+                  <p className="text-custom-black-200 text-sm">{experience.period} • {experience.location}</p>
                   <ul className="mt-4 space-y-2">
                     {experience.description.map((item, i) => (
                       <li key={i} className="text-custom-black-200">

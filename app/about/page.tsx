@@ -4,16 +4,16 @@ import { motion } from 'framer-motion';
 import { HiAcademicCap, HiCode, HiChip } from 'react-icons/hi';
 
 const skills = [
-  'React',
-  'Next.js',
-  'TypeScript',
-  'Node.js',
-  'Python',
-  'JavaScript',
-  'HTML/CSS',
-  'Tailwind CSS',
-  'Git',
-  'SQL'
+  // Languages
+  'Java', 'Python', 'SQL', 'JavaScript', 'HTML/CSS',
+  // Frameworks
+  'React', 'Node.js', 'Flask', 'SwiftUI', 'FastAPI', 'Material-UI', 'Tailwind CSS',
+  // Developer Tools
+  'Git', 'XCode', 'Postman', 'Supabase', 'VS Code', 'Visual Studio', 'IntelliJ', 'Eclipse',
+  // Technologies
+  'Docker', 'REST API', 'OAuth', 'PostgreSQL',
+  // Tools and Platforms
+  'Salesforce', 'GitHub', 'Azure DevOps'
 ];
 
 export default function About() {
@@ -54,24 +54,24 @@ export default function About() {
           </div>
           <div className="space-y-4">
             <div>
-              <h3 className="text-xl font-semibold text-custom-black-50">Information Technology Intern</h3>
-              <p className="text-custom-pink-500">OTM Media & IT Solutions • Oct 2024 - Present</p>
+              <h3 className="text-xl font-semibold text-custom-black-50">Technology Intern</h3>
+              <p className="text-custom-pink-500">LocumTenens.com • May 2025 - Present</p>
               <p className="text-custom-black-200 mt-2">
-                Providing technical support and developing software solutions for clients.
+                Engineering and deploying full-stack applications, providing technical support to telehealth providers, and creating system documentation.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-custom-black-50">Information Technology Intern</h3>
+              <p className="text-custom-pink-500">OTM Media and IT Solutions • Oct 2024 - May 2025</p>
+              <p className="text-custom-black-200 mt-2">
+                Providing technical support and troubleshooting, collaborating with IT specialists to deliver custom solutions.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-custom-black-50">CX Intern</h3>
-              <p className="text-custom-pink-500">SiteOne Landscape Supply • May 2024 - August 2024</p>
+              <p className="text-custom-pink-500">SiteOne Landscape Supply • May 2024 - Aug 2024</p>
               <p className="text-custom-black-200 mt-2">
-                Enhanced user experience and implemented customer engagement strategies.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-custom-black-50">Data Entry Clerk</h3>
-              <p className="text-custom-pink-500">Environmental Tech. Corporation and Health Solutions • May 2018 - Present</p>
-              <p className="text-custom-black-200 mt-2">
-                Managing data entry and financial processing operations.
+                Streamlined prospect management using Salesforce, collaborated on e-commerce improvements, and supported Partner Program launch.
               </p>
             </div>
             <div>
@@ -79,27 +79,6 @@ export default function About() {
               <p className="text-custom-pink-500">Alpharetta, GA • Aug 2017 - May 2022</p>
               <p className="text-custom-black-200 mt-2">
                 Member of an all-girls team recognized as one of the top teams in the country. Utilized JavaScript to program the hub connected to the robot, managed budget, coordinated with sponsors, and handled financial matters. Maintained safety protocols and performed robot assembly tasks.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-custom-black-50">Counter and Server</h3>
-              <p className="text-custom-pink-500">Alessios, Johns Creek, GA • May 2021 - Mar 2022</p>
-              <p className="text-custom-black-200 mt-2">
-                Managed takeout orders, provided attentive table service, and cross-trained in various roles including salad preparation, dishwashing, expo, and hosting.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-custom-black-50">Drive Thru Leader</h3>
-              <p className="text-custom-pink-500">McDonalds, Alpharetta, GA • May 2020 - May 2021</p>
-              <p className="text-custom-black-200 mt-2">
-                Demonstrated multitasking abilities in a fast-paced environment, processed customer orders and payments, and efficiently managed drive-thru operations.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-custom-black-50">FLL Robotics Main Programmer</h3>
-              <p className="text-custom-pink-500">Alpharetta, GA • Aug 2012 - May 2017</p>
-              <p className="text-custom-black-200 mt-2">
-                Acquired to program pre-built robot using block code to introduce programming concepts.
               </p>
             </div>
           </div>
@@ -118,8 +97,8 @@ export default function About() {
           </div>
           <div>
             <h3 className="text-xl font-semibold text-custom-black-50">Bachelor of Science in Computer Science</h3>
-            <p className="text-custom-pink-500">Georgia State University • 2022 - Fall 2025</p>
-            <p className="text-custom-black-200">GPA: 3.8/4.0</p>
+            <p className="text-custom-pink-500">Georgia State University • Aug 2022 - Dec 2025</p>
+            <p className="text-custom-black-200">Atlanta, GA</p>
             <div className="mt-4">
               <h4 className="font-semibold text-custom-black-50 mb-2">Awards & Achievements</h4>
               <ul className="list-disc list-inside text-custom-black-200 mt-2">
@@ -139,7 +118,7 @@ export default function About() {
         >
           <div className="flex items-center mb-4">
             <HiCode className="h-6 w-6 text-custom-pink-500 mr-2" />
-            <h2 className="text-2xl font-semibold text-custom-black-50">Skills</h2>
+            <h2 className="text-2xl font-semibold text-custom-black-50">Technical Skills</h2>
           </div>
           <div className="flex flex-wrap gap-2">
             {skills.map((skill) => (

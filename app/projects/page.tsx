@@ -2,7 +2,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { HiCode, HiCube, HiChip, HiDatabase, HiExternalLink } from 'react-icons/hi';
+import { HiCode, HiCube, HiChip, HiDatabase, HiExternalLink, HiServer, HiDeviceMobile, HiGlobe } from 'react-icons/hi';
 import Image from 'next/image';
 import { IconType } from 'react-icons';
 
@@ -15,24 +15,36 @@ type Project = {
   image: string;
   github?: string;
   demo?: string;
+  period: string;
 };
 
 const projects: Project[] = [
   {
-    title: 'FTC Robotics Competition',
-    description: 'Led programming for an all-girls robotics team that was recognized as one of the top teams in the country. Developed JavaScript programs for robot control, managed team budget and sponsor relations, and maintained safety protocols during competitions.',
-    icon: HiChip,
-    type: 'Competition Project',
-    tech: ['JavaScript', 'Robotics', 'Team Leadership', 'Project Management'],
-    image: '/project1.jpg'
+    title: 'Inventory Management System',
+    description: 'Built and deployed a full-stack inventory tracking system for internal use at LocumTenens, replacing spreadsheet-based workflows. Built a dynamic React dashboard with CSV exports, inline quantity editing, and category color coding. Engineered Flask REST APIs with Supabase (PostgreSQL) and containerized with Docker for dev environment parity.',
+    icon: HiServer,
+    type: 'Work Project',
+    tech: ['Python', 'Flask', 'React', 'PostgreSQL', 'Docker', 'Supabase'],
+    image: '/project1.jpg',
+    period: 'May 2025 – Present'
   },
   {
-    title: 'FLL Robotics Program',
-    description: 'Introduced to programming through FIRST LEGO League robotics. Programmed pre-built robots using block-based coding, laying the foundation for more advanced programming concepts.',
-    icon: HiChip,
-    type: 'Competition Project',
-    tech: ['Block Programming', 'Robotics', 'Problem Solving'],
-    image: '/project2.jpg'
+    title: 'Calorie Tracker App',
+    description: 'Developed an iOS app enabling users to create meals by combining saved ingredients, tracking serving sizes and calorie totals dynamically. Applied MVVM architecture for clean separation of UI logic and data models, and persisted all user data using UserDefaults. Integrated real-time calorie calculation and validation of user input for a polished and intuitive interface.',
+    icon: HiDeviceMobile,
+    type: 'Personal Project',
+    tech: ['SwiftUI', 'UIKit', 'MVVM', 'iOS Development'],
+    image: '/project2.jpg',
+    period: 'Jan 2025 – May 2025'
+  },
+  {
+    title: 'Flight Tracker',
+    description: 'Built a flight tracking frontend that queries live data via AviationStack API, supporting search by flight number or route. Implemented responsive design, API error handling, and reusable components using React hooks. Added route-based filtering and date selection logic to enhance user control and frontend logic complexity.',
+    icon: HiGlobe,
+    type: 'Personal Project',
+    tech: ['JavaScript', 'React', 'AviationStack API', 'REST API'],
+    image: '/project3.jpg',
+    period: 'Feb 2025 – April 2025'
   },
   {
     title: 'SMS Task Reminder App',
@@ -40,39 +52,26 @@ const projects: Project[] = [
     icon: HiCode,
     type: 'Personal Project',
     tech: ['Swift', 'SwiftUI', 'Twilio API', 'iOS Development'],
-    image: '/project3.jpg'
-  },
-  {
-    title: 'Calorie Tracker App',
-    description: 'Used Swift and XCode to create a Calorie Tracking app enabling users to log ingredients, meals, and monitor their nutrition goals.',
-    icon: HiCube,
-    type: 'Personal Project',
-    tech: ['Swift', 'XCode', 'iOS Development'],
-    image: '/project4.jpg'
+    image: '/project4.jpg',
+    period: '2024'
   },
   {
     title: 'Student Management System',
     description: 'Developed a MySQL database to manage student information, course enrollment, and grades. Utilized DBeaver and designed SQL queries to retrieve and update data efficiently.',
     icon: HiDatabase,
-    type: 'Work Project',
+    type: 'Academic Project',
     tech: ['MySQL', 'DBeaver', 'SQL'],
-    image: '/project5.jpg'
+    image: '/project5.jpg',
+    period: '2024'
   },
   {
-    title: 'Open Wheelchair Project',
-    description: 'Involved in building motorized wheelchairs using PVC and other materials for delivery to children in need.',
+    title: 'FTC Robotics Competition',
+    description: 'Led programming for an all-girls robotics team that was recognized as one of the top teams in the country. Developed JavaScript programs for robot control, managed team budget and sponsor relations, and maintained safety protocols during competitions.',
     icon: HiChip,
-    type: 'Personal Project',
-    tech: ['Hardware', 'Engineering', 'Community Service'],
-    image: '/project4.jpg'
-  },
-  {
-    title: 'FIRST Robotics',
-    description: 'Member of an all-girls team recognized as one of the top teams in the country. Utilized JavaScript to program the hub to enable autonomous actions, and basic controller-driven movements.',
-    icon: HiCode,
-    type: 'Personal Project',
-    tech: ['JavaScript', 'Robotics', 'Team Leadership'],
-    image: '/project5.jpg'
+    type: 'Competition Project',
+    tech: ['JavaScript', 'Robotics', 'Team Leadership', 'Project Management'],
+    image: '/project6.jpg',
+    period: '2021 – Present'
   }
 ];
 
@@ -88,7 +87,7 @@ export default function Projects() {
         >
           <h1 className="text-4xl font-bold text-custom-black-50 mb-4">My Projects</h1>
           <p className="text-lg text-custom-black-200">
-            Here are some of the projects Ive worked on
+            Here are some of the projects I&apos;ve worked on
           </p>
         </motion.div>
 
@@ -110,9 +109,12 @@ export default function Projects() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-custom-black-50 mb-2">
-                  {project.title}
-                </h3>
+                <div className="flex justify-between items-start mb-2">
+                  <h3 className="text-xl font-semibold text-custom-black-50">
+                    {project.title}
+                  </h3>
+                </div>
+                <p className="text-custom-black-200 mb-2 text-sm">{project.period}</p>
                 <p className="text-custom-black-200 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
