@@ -81,6 +81,27 @@ export default function About() {
                 Led Java development for autonomous and driver-controlled robotics systems, achieving 8x State Championships and multiple World Championship qualifications. Contributed to the Open Wheelchair Project, developing open-source robotics solutions for mobility-impaired individuals. Managed technical documentation and secured $5,500+ in sponsorships for engineering initiatives.
               </p>
             </div>
+            <div>
+              <h3 className="text-xl font-semibold text-custom-black-50">Drive Thru Leader</h3>
+              <p className="text-custom-pink-500">McDonalds • May 2020 - May 2021</p>
+              <p className="text-custom-black-200 mt-2">
+                Took customer orders and processed payments. Demonstrated multitasking abilities in a fast-paced environment. Efficiently handed out food at the drive-thru window and managed order packaging.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-custom-black-50">Counter and Server</h3>
+              <p className="text-custom-pink-500">Alessios • May 2021 - Mar 2022</p>
+              <p className="text-custom-black-200 mt-2">
+                Managed takeout orders and addressed customer queries via phone. Ensured accuracy in order packaging and delivery. Provided attentive table service and maintained a clean dining area. Cross-trained in various roles, including salad preparation, dishwashing, expo, and hosting.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-custom-black-50">Data Entry</h3>
+              <p className="text-custom-pink-500">Environmental Technology Corporation Hearing Solutions • May 2018 - Present</p>
+              <p className="text-custom-black-200 mt-2">
+                Entered customers' hearing data accurately and efficiently. Managed email communication and ensured correct data entry by collaborating with other employees. Authorized checks and handled bank transactions.
+              </p>
+            </div>
           </div>
         </motion.div>
 

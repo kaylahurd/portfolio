@@ -41,6 +41,37 @@ export default function Resume() {
         'Contributed to the Open Wheelchair Project, developing open-source robotics solutions for mobility-impaired individuals',
         'Managed technical documentation and secured $5,500+ in sponsorships for engineering initiatives'
       ],
+    },
+    {
+      title: 'Drive Thru Leader',
+      company: 'McDonalds',
+      period: 'May 2020 - May 2021',
+      responsibilities: [
+        'Took customer orders and processed payments',
+        'Demonstrated multitasking abilities in a fast-paced environment',
+        'Efficiently handed out food at the drive-thru window and managed order packaging'
+      ],
+    },
+    {
+      title: 'Counter and Server',
+      company: 'Alessios',
+      period: 'May 2021 - Mar 2022',
+      responsibilities: [
+        'Managed takeout orders and addressed customer queries via phone',
+        'Ensured accuracy in order packaging and delivery',
+        'Provided attentive table service and maintained a clean dining area',
+        'Cross-trained in various roles, including salad preparation, dishwashing, expo, and hosting'
+      ],
+    },
+    {
+      title: 'Data Entry',
+      company: 'Environmental Technology Corporation Hearing Solutions',
+      period: 'May 2018 - Present',
+      responsibilities: [
+        'Entered customers\' hearing data accurately and efficiently',
+        'Managed email communication and ensured correct data entry by collaborating with other employees',
+        'Authorized checks and handled bank transactions'
+      ],
     }
   ];
 
@@ -87,7 +118,7 @@ export default function Resume() {
           <div className="bg-custom-black-800 p-6 rounded-lg shadow-md text-center">
             <h2 className="text-2xl font-bold text-custom-black-50 mb-4">Kayla Hurd</h2>
             <div className="text-custom-black-200 space-y-2">
-              <p>404-713-6295 | kaylahurd39@gmail.com</p>
+              <p>kaylahurd39@gmail.com</p>
               <p>linkedin.com/in/kayla-hurd | github.com/kaylahurd</p>
             </div>
           </div>

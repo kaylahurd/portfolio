@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { HiMail, HiLocationMarker, HiCode, HiUser, HiPhone } from 'react-icons/hi';
+import { HiMail, HiLocationMarker, HiCode, HiUser } from 'react-icons/hi';
 
 export default function Contact() {
   return (
@@ -35,15 +35,6 @@ export default function Contact() {
                   className="text-custom-black-200 hover:text-custom-pink-500 transition-colors"
                 >
                   kaylahurd39@gmail.com
-                </a>
-              </div>
-              <div className="flex items-center">
-                <HiPhone className="h-6 w-6 text-custom-pink-500 mr-3" />
-                <a
-                  href="tel:404-713-6295"
-                  className="text-custom-black-200 hover:text-custom-pink-500 transition-colors"
-                >
-                  404-713-6295
                 </a>
               </div>
               <div className="flex items-center">

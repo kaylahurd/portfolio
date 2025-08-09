@@ -49,6 +49,43 @@ const experiences: Experience[] = [
       'Automated lead management processes in Salesforce by designing optimized workflows and data validation rules.',
       'Collaborated with e-commerce dev teams on platform enhancements, improving user engagement and online ordering efficiency.'
     ]
+  },
+  {
+    title: 'Drive Thru Leader',
+    company: 'McDonalds',
+    period: 'May 2020 – May 2021',
+    location: 'Alpharetta, GA',
+    icon: HiSupport,
+    description: [
+      'Took customer orders and processed payments.',
+      'Demonstrated multitasking abilities in a fast-paced environment.',
+      'Efficiently handed out food at the drive-thru window and managed order packaging.'
+    ]
+  },
+  {
+    title: 'Counter and Server',
+    company: 'Alessios',
+    period: 'May 2021 – Mar 2022',
+    location: 'Johns Creek, GA',
+    icon: HiSupport,
+    description: [
+      'Managed takeout orders and addressed customer queries via phone.',
+      'Ensured accuracy in order packaging and delivery.',
+      'Provided attentive table service and maintained a clean dining area.',
+      'Cross-trained in various roles, including salad preparation, dishwashing, expo, and hosting.'
+    ]
+  },
+  {
+    title: 'Data Entry',
+    company: 'Environmental Technology Corporation Hearing Solutions',
+    period: 'May 2018 – Present',
+    location: 'Alpharetta, GA',
+    icon: HiSupport,
+    description: [
+      'Entered customers\' hearing data accurately and efficiently.',
+      'Managed email communication and ensured correct data entry by collaborating with other employees.',
+      'Authorized checks and handled bank transactions.'
+    ]
   }
 ];
 
