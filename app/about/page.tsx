@@ -5,15 +5,15 @@ import { HiAcademicCap, HiCode, HiChip } from 'react-icons/hi';
 
 const skills = [
   // Languages
-  'Java', 'Python', 'SQL', 'JavaScript', 'HTML/CSS',
+  'C#', 'C++', 'C', 'Java', 'Python', 'SQL', 'JavaScript', 'TypeScript', 'HTML/CSS',
   // Frameworks
-  'React', 'Node.js', 'Flask', 'SwiftUI', 'FastAPI', 'Material-UI', 'Tailwind CSS',
+  'ASP.NET', 'React', 'Next.js', 'Node.js', 'Express.js', 'Flask', 'SwiftUI', 'Tailwind CSS', 'Bootstrap',
   // Developer Tools
-  'Git', 'XCode', 'Postman', 'Supabase', 'VS Code', 'Visual Studio', 'IntelliJ', 'Eclipse',
+  'Git', 'GitHub Actions', 'Jenkins', 'XCode', 'Postman', 'Supabase', 'VS Code', 'Visual Studio', 'IntelliJ', 'Figma', 'Pytest', 'JUnit',
   // Technologies
-  'Docker', 'REST API', 'OAuth', 'PostgreSQL',
-  // Tools and Platforms
-  'Salesforce', 'GitHub', 'Azure DevOps'
+  'AI/ML', 'REST APIs', 'GraphQL', 'OAuth', 'PostgreSQL', 'MongoDB', 'Docker', 'Kubernetes', 'AWS', 'Azure',
+  // Platforms
+  'Azure DevOps', 'Salesforce', 'GitHub', 'Jira', 'Confluence'
 ];
 
 export default function About() {
@@ -54,31 +54,31 @@ export default function About() {
           </div>
           <div className="space-y-4">
             <div>
-              <h3 className="text-xl font-semibold text-custom-black-50">Technology Intern</h3>
-              <p className="text-custom-pink-500">LocumTenens.com • May 2025 - Present</p>
+              <h3 className="text-xl font-semibold text-custom-black-50">Software Developer Intern</h3>
+              <p className="text-custom-pink-500">LocumTenens.com • May 2025 - July 2025</p>
               <p className="text-custom-black-200 mt-2">
-                Engineering and deploying full-stack applications, providing technical support to telehealth providers, and creating system documentation.
+                Engineered full-stack web applications with React, Flask, and Supabase, adding secure authentication, role-based access, and real-time data sync to modernize internal tools. Developed and optimized C# APIs for a .NET platform integrated with Salesforce, Axuall, and Martech systems, enabling automated credentialing and marketing workflows.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-custom-black-50">Information Technology Intern</h3>
               <p className="text-custom-pink-500">OTM Media and IT Solutions • Oct 2024 - May 2025</p>
               <p className="text-custom-black-200 mt-2">
-                Providing technical support and troubleshooting, collaborating with IT specialists to deliver custom solutions.
+                Developed internal web tools for asset tracking and reporting, improving client visibility and reducing support response times. Provided remote and on-site support for hardware, software, and networking issues, ensuring system reliability for small business clients.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-custom-black-50">CX Intern</h3>
               <p className="text-custom-pink-500">SiteOne Landscape Supply • May 2024 - Aug 2024</p>
               <p className="text-custom-black-200 mt-2">
-                Streamlined prospect management using Salesforce, collaborated on e-commerce improvements, and supported Partner Program launch.
+                Automated lead management processes in Salesforce by designing optimized workflows and data validation rules. Collaborated with e-commerce dev teams on platform enhancements, improving user engagement and online ordering efficiency.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-custom-black-50">FTC Robotics Main Programmer</h3>
-              <p className="text-custom-pink-500">Alpharetta, GA • Aug 2017 - May 2022</p>
+              <h3 className="text-xl font-semibold text-custom-black-50">Lead Programmer/Developer</h3>
+              <p className="text-custom-pink-500">FIRST Robotics Team • Aug 2012 - May 2022</p>
               <p className="text-custom-black-200 mt-2">
-                Member of an all-girls team recognized as one of the top teams in the country. Utilized JavaScript to program the hub connected to the robot, managed budget, coordinated with sponsors, and handled financial matters. Maintained safety protocols and performed robot assembly tasks.
+                Led Java development for autonomous and driver-controlled robotics systems, achieving 8x State Championships and multiple World Championship qualifications. Contributed to the Open Wheelchair Project, developing open-source robotics solutions for mobility-impaired individuals. Managed technical documentation and secured $5,500+ in sponsorships for engineering initiatives.
               </p>
             </div>
           </div>

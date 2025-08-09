@@ -22,7 +22,7 @@ export default function Home() {
               Hi! My name is Kayla Hurd.
             </h1>
             <p className="text-xl sm:text-2xl text-custom-black-200 mb-8">
-              Senior Computer Science Student at Georgia State University
+              Software Developer Intern at LocumTenens | Computer Science Student at Georgia State University
             </p>
             <motion.div
               initial={{ opacity: 0 }}

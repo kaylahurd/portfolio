@@ -21,38 +21,65 @@ type Project = {
 const projects: Project[] = [
   {
     title: 'Inventory Management System',
-    description: 'Built and deployed a full-stack inventory tracking system for internal use at LocumTenens, replacing spreadsheet-based workflows. Built a dynamic React dashboard with CSV exports, inline quantity editing, and category color coding. Engineered Flask REST APIs with Supabase (PostgreSQL) and containerized with Docker for dev environment parity.',
+    description: 'A full-stack React and Flask web app for tracking company equipment and supplies. Features: Editable item summaries, CSV export with formatting that matches the original spreadsheet, category grouping, default quantity handling, past summary history, and user authentication for secure access. Tech: React, Flask, Supabase, Styled UI components, CSV export libraries. Impact: Designed for real-world business use with a professional UI, enabling precise inventory control and historical tracking for accurate reporting.',
     icon: HiServer,
     type: 'Work Project',
-    tech: ['Python', 'Flask', 'React', 'PostgreSQL', 'Docker', 'Supabase'],
+    tech: ['React', 'Flask', 'Supabase', 'PostgreSQL', 'Docker', 'CSV Export'],
     image: '/project1.jpg',
     period: 'May 2025 – Present'
   },
   {
     title: 'Calorie Tracker App',
-    description: 'Developed an iOS app enabling users to create meals by combining saved ingredients, tracking serving sizes and calorie totals dynamically. Applied MVVM architecture for clean separation of UI logic and data models, and persisted all user data using UserDefaults. Integrated real-time calorie calculation and validation of user input for a polished and intuitive interface.',
+    description: 'A Swift iOS app that allows users to log meals and calculate daily calorie intake using Gemini\'s APIs for nutrition data. Features: Permanent ingredient storage, meal creation with serving sizes, automatic calorie calculation, and ingredient lookup powered by Gemini API. Tech: Swift, SwiftUI, Gemini API, UserDefaults for persistence. Impact: Provides a seamless and visually appealing mobile experience for tracking meals and managing nutrition goals.',
     icon: HiDeviceMobile,
     type: 'Personal Project',
-    tech: ['SwiftUI', 'UIKit', 'MVVM', 'iOS Development'],
+    tech: ['Swift', 'SwiftUI', 'Gemini API', 'UserDefaults', 'iOS Development'],
     image: '/project2.jpg',
     period: 'Jan 2025 – May 2025'
   },
   {
-    title: 'Flight Tracker',
-    description: 'Built a flight tracking frontend that queries live data via AviationStack API, supporting search by flight number or route. Implemented responsive design, API error handling, and reusable components using React hooks. Added route-based filtering and date selection logic to enhance user control and frontend logic complexity.',
+    title: 'Flight Tracker App',
+    description: 'A web app that uses the AviationStack API to search and track flights. Features: Search by flight number (MVP) and route (departure + arrival airports with date), with live flight status updates. Tech: React, AviationStack API, Axios. Impact: Provides travelers with quick, real-time flight data for better travel planning.',
     icon: HiGlobe,
     type: 'Personal Project',
-    tech: ['JavaScript', 'React', 'AviationStack API', 'REST API'],
+    tech: ['React', 'AviationStack API', 'Axios', 'JavaScript', 'REST API'],
     image: '/project3.jpg',
     period: 'Feb 2025 – April 2025'
   },
   {
+    title: 'AI Career Path Predictor',
+    description: 'An AI-powered web app that predicts the most suitable tech career path for a user based on their skills, interests, and experience. Features: Interactive questionnaire, AI-based career suggestions, and role descriptions with required skills. Tech: Streamlit, OpenAI API, Python. Impact: Helps students and career changers identify the right tech path and understand how to prepare for it.',
+    icon: HiChip,
+    type: 'Personal Project',
+    tech: ['Streamlit', 'OpenAI API', 'Python', 'Machine Learning', 'Web Development'],
+    image: '/project4.jpg',
+    period: 'Dec 2024 – Jan 2025'
+  },
+  {
+    title: 'AI Study Buddy Chatbot',
+    description: 'An AI-powered study assistant that explains complex topics in simple, beginner-friendly terms. Features: Instant Q&A, step-by-step explanations, and customizable difficulty level for responses. Tech: Streamlit, OpenAI API, Python. Impact: Supports learners in understanding challenging topics with personalized guidance and clear breakdowns.',
+    icon: HiCode,
+    type: 'Personal Project',
+    tech: ['Streamlit', 'OpenAI API', 'Python', 'Natural Language Processing', 'Education Tech'],
+    image: '/project5.jpg',
+    period: 'Nov 2024 – Dec 2024'
+  },
+  {
+    title: 'RealNest Real Estate Portal',
+    description: 'Developed a full-stack property platform with authentication, role-based access, and real-time listings. Integrated a machine learning-powered price prediction model using historical market data for smarter buying decisions.',
+    icon: HiGlobe,
+    type: 'Personal Project',
+    tech: ['React', 'GraphQL', 'AWS', 'Machine Learning', 'Authentication'],
+    image: '/project3.jpg',
+    period: 'Feb 2025 – July 2025'
+  },
+  {
     title: 'SMS Task Reminder App',
-    description: 'A productivity app that sends SMS reminders for scheduled tasks. Features include task categorization, repeating reminders, and persistent task storage using Swift&apos;s local storage.',
+    description: 'A productivity app that sends SMS reminders for scheduled tasks. Features include task categorization, repeating reminders, and persistent task storage using Swift\'s local storage.',
     icon: HiCode,
     type: 'Personal Project',
     tech: ['Swift', 'SwiftUI', 'Twilio API', 'iOS Development'],
-    image: '/project4.jpg',
+    image: '/project6.jpg',
     period: '2024'
   },
   {
@@ -60,8 +87,8 @@ const projects: Project[] = [
     description: 'Developed a MySQL database to manage student information, course enrollment, and grades. Utilized DBeaver and designed SQL queries to retrieve and update data efficiently.',
     icon: HiDatabase,
     type: 'Academic Project',
-    tech: ['MySQL', 'DBeaver', 'SQL'],
-    image: '/project5.jpg',
+    tech: ['MySQL', 'DBeaver', 'SQL', 'Database Design'],
+    image: '/project1.jpg',
     period: '2024'
   },
   {
@@ -70,7 +97,7 @@ const projects: Project[] = [
     icon: HiChip,
     type: 'Competition Project',
     tech: ['JavaScript', 'Robotics', 'Team Leadership', 'Project Management'],
-    image: '/project6.jpg',
+    image: '/project2.jpg',
     period: '2021 – Present'
   }
 ];

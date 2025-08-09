@@ -5,15 +5,22 @@ import { motion } from 'framer-motion';
 export default function Resume() {
   const experience = [
     {
+      title: 'Software Developer Intern',
+      company: 'LocumTenens.com',
+      period: 'May 2025 – July 2025',
+      responsibilities: [
+        'Engineered full-stack web applications with React, Flask, and Supabase, adding secure authentication, role-based access, and real-time data sync to modernize internal tools',
+        'Developed and optimized C# APIs for a .NET platform integrated with Salesforce, Axuall, and Martech systems, enabling automated credentialing and marketing workflows',
+        'Led API debugging and performance tuning using Postman, SQL, and logging tools while collaborating with Software Engineering, Martech, and Product teams to deliver scalable, production-ready solutions'
+      ],
+    },
+    {
       title: 'Information Technology Intern',
       company: 'OTM Media & IT Solutions',
-      period: 'Oct 2024 – Present',
+      period: 'Oct 2024 – May 2025',
       responsibilities: [
-        'Provided technical support and troubleshooting, ensuring system reliability and user satisfaction',
-        'Collaborated with clients on small-scale programming projects, contributing to solutions that enhance business operations',
-        'Assisted in building small business inventory management systems, contributing to full software lifecycle from development to testing',
-        'Collaborated with IT specialists and clients to analyze technical requirements and deliver custom solutions',
-        'Assisted in the development and debugging of client-side software solutions using Python and Java'
+        'Developed internal web tools for asset tracking and reporting, improving client visibility and reducing support response times',
+        'Provided remote and on-site support for hardware, software, and networking issues, ensuring system reliability for small business clients'
       ],
     },
     {
@@ -21,87 +28,42 @@ export default function Resume() {
       company: 'SiteOne Landscape Supply',
       period: 'May 2024 – August 2024',
       responsibilities: [
-        'Developed strategies to boost online engagement and drive customer sign-ups for pricing and inventory access',
-        'Implemented the Partner Program for online orders, enhancing user experience and incentivizing customer interaction',
-        'Contributed to software optimization efforts aimed at improving platform accessibility and user satisfaction',
-        'Gained valuable insights into software development, UI/UX design, and data analysis'
+        'Automated lead management processes in Salesforce by designing optimized workflows and data validation rules',
+        'Collaborated with e-commerce dev teams on platform enhancements, improving user engagement and online ordering efficiency'
       ],
     },
     {
-      title: 'Data Entry Clerk',
-      company: 'Environmental Tech. Corporation and Health Solutions',
-      period: 'May 2018 – Present',
+      title: 'Lead Programmer/Developer',
+      company: 'FIRST Robotics Team',
+      period: 'Aug 2012 - May 2022',
       responsibilities: [
-        'Entered customers&apos;s hearing data accurately and efficiently',
-        'Managed email communication and ensured correct data entry by collaborating with other employees',
-        'Authorized checks and handled bank deposits'
+        'Led Java development for autonomous and driver-controlled robotics systems, achieving 8x State Championships and multiple World Championship qualifications',
+        'Contributed to the Open Wheelchair Project, developing open-source robotics solutions for mobility-impaired individuals',
+        'Managed technical documentation and secured $5,500+ in sponsorships for engineering initiatives'
       ],
-    },
-    {
-      title: 'Main Programmer - FTC Robotics',
-      company: 'Alpharetta, GA',
-      period: 'Aug 2017 - May 2022',
-      responsibilities: [
-        'Led programming for an all-girls robotics team recognized as one of the top teams in the country',
-        'Utilized JavaScript to program the robot hub for autonomous actions and controller-driven movements',
-        'Managed team budget, coordinated with sponsors, and handled financial matters',
-        'Maintained safety protocols during competitions and meetings',
-        'Performed robot assembly tasks using various tools and machinery'
-      ],
-    },
-    {
-      title: 'Counter and Server',
-      company: 'Alessios, Johns Creek, GA',
-      period: 'May 2021 - Mar 2022',
-      responsibilities: [
-        'Managed takeout orders and addressed customer queries via phone',
-        'Ensured accuracy in order packaging and delivery',
-        'Provided attentive table service and maintained a clean dining area',
-        'Cross-trained in various roles including salad preparation, dishwashing, expo, and hosting'
-      ],
-    },
-    {
-      title: 'Drive Thru Leader',
-      company: 'McDonalds, Alpharetta, GA',
-      period: 'May 2020 - May 2021',
-      responsibilities: [
-        'Took customer orders and processed payments',
-        'Demonstrated multitasking abilities in a fast-paced environment',
-        'Efficiently handled food at the drive-thru window and managed order packaging'
-      ],
-    },
-    {
-      title: 'Main Programmer - FLL Robotics',
-      company: 'Alpharetta, GA',
-      period: 'Aug 2012 - May 2017',
-      responsibilities: [
-        'Programmed pre-built robots using block-based coding',
-        'Learned fundamental programming concepts through hands-on robotics experience',
-        'Participated in team competitions and collaborative problem-solving'
-      ],
-    },
+    }
   ];
 
   const projects = [
     {
+      title: 'Inventory Management System',
+      description: 'Full-stack app with authentication, editable dashboards, role-based access, and historical tracking; deployed with AWS for scalability. Custom CSV export with category grouping, thresholds, and color-coded formatting for audit readiness.',
+      technologies: ['React', 'Flask', 'PostgreSQL', 'AWS', 'Authentication', 'CSV Export'],
+    },
+    {
+      title: 'Calorie Tracker iOS App',
+      description: 'iOS app with persistent ingredient storage, meal creation, and real-time calorie calculations with serving-size adjustments. Implemented offline data handling using UserDefaults for fast and reliable access.',
+      technologies: ['SwiftUI', 'MVVM', 'UserDefaults', 'iOS Development'],
+    },
+    {
+      title: 'RealNest Real Estate Portal',
+      description: 'Developed a full-stack property platform with authentication, role-based access, and real-time listings. Integrated a machine learning-powered price prediction model using historical market data for smarter buying decisions.',
+      technologies: ['React', 'GraphQL', 'AWS', 'Machine Learning', 'Authentication'],
+    },
+    {
       title: 'FTC Robotics Competition Project',
-      description: 'Led the development of competition robot software using JavaScript, implementing autonomous routines and precise control systems.',
-      technologies: ['JavaScript', 'Robotics', 'Team Leadership', 'Project Management'],
-    },
-    {
-      title: 'SMS Task Reminder App',
-      description: 'Developed a productivity app using Swift that sends SMS reminders for scheduled tasks, featuring task categorization and persistent storage.',
-      technologies: ['Swift', 'SwiftUI', 'Twilio API', 'iOS Development'],
-    },
-    {
-      title: 'Calorie Tracker App',
-      description: 'Created an iOS app for tracking calories and monitoring nutrition goals using Swift and XCode.',
-      technologies: ['Swift', 'XCode', 'iOS Development'],
-    },
-    {
-      title: 'Student Management System',
-      description: 'Developed a MySQL database system for managing student information, course enrollment, and grades.',
-      technologies: ['MySQL', 'DBeaver', 'SQL'],
+      description: 'Led the development of competition robot software using Java, implementing autonomous routines and precise control systems.',
+      technologies: ['Java', 'Robotics', 'Team Leadership', 'Project Management'],
     },
     {
       title: 'Open Wheelchair Project',
@@ -119,6 +81,17 @@ export default function Resume() {
         className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
       >
         <h1 className="text-4xl font-bold text-custom-black-50 mb-8">Resume</h1>
+        
+        {/* Contact Header */}
+        <section className="mb-8">
+          <div className="bg-custom-black-800 p-6 rounded-lg shadow-md text-center">
+            <h2 className="text-2xl font-bold text-custom-black-50 mb-4">Kayla Hurd</h2>
+            <div className="text-custom-black-200 space-y-2">
+              <p>404-713-6295 | kaylahurd39@gmail.com</p>
+              <p>linkedin.com/in/kayla-hurd | github.com/kaylahurd</p>
+            </div>
+          </div>
+        </section>
         
         {/* Experience Section */}
         <section className="mb-12">
@@ -142,6 +115,17 @@ export default function Resume() {
                 </ul>
               </motion.div>
             ))}
+          </div>
+        </section>
+
+        {/* Education Section */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-custom-black-50 mb-6">Education</h2>
+          
+          <div className="bg-custom-black-800 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold text-custom-black-50">Bachelor of Science in Computer Science</h3>
+            <p className="text-custom-pink-500">Georgia State University • Aug 2022 - Dec 2025</p>
+            <p className="text-custom-black-200">Atlanta, GA</p>
           </div>
         </section>
 
@@ -172,6 +156,56 @@ export default function Resume() {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </section>
+
+        {/* Technical Skills Section */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-custom-black-50 mb-6">Technical Skills</h2>
+          
+          <div className="bg-custom-black-800 p-6 rounded-lg shadow-md">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-lg font-semibold text-custom-black-50 mb-3">Languages</h3>
+                <div className="flex flex-wrap gap-2">
+                  {['C#', 'C++', 'C', 'Java', 'Python', 'SQL', 'JavaScript', 'TypeScript', 'HTML/CSS'].map((skill) => (
+                    <span key={skill} className="px-3 py-1 bg-custom-black-700 text-custom-pink-500 rounded-full text-sm">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-custom-black-50 mb-3">Frameworks & Technologies</h3>
+                <div className="flex flex-wrap gap-2">
+                  {['ASP.NET', 'React', 'Next.js', 'Node.js', 'Express.js', 'Flask', 'SwiftUI', 'Tailwind CSS', 'Bootstrap'].map((skill) => (
+                    <span key={skill} className="px-3 py-1 bg-custom-black-700 text-custom-pink-500 rounded-full text-sm">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-custom-black-50 mb-3">Developer Tools</h3>
+                <div className="flex flex-wrap gap-2">
+                  {['Git', 'GitHub Actions', 'Jenkins', 'XCode', 'Postman', 'Supabase', 'VS Code', 'Visual Studio', 'IntelliJ', 'Figma', 'Pytest', 'JUnit'].map((skill) => (
+                    <span key={skill} className="px-3 py-1 bg-custom-black-700 text-custom-pink-500 rounded-full text-sm">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-custom-black-50 mb-3">Platforms & Cloud</h3>
+                <div className="flex flex-wrap gap-2">
+                  {['Azure DevOps', 'Salesforce', 'GitHub', 'Jira', 'Confluence', 'AWS', 'Azure', 'Docker', 'Kubernetes'].map((skill) => (
+                    <span key={skill} className="px-3 py-1 bg-custom-black-700 text-custom-pink-500 rounded-full text-sm">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

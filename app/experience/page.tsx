@@ -17,15 +17,15 @@ type Experience = {
 
 const experiences: Experience[] = [
   {
-    title: 'Technology Intern',
+    title: 'Software Developer Intern',
     company: 'LocumTenens.com',
-    period: 'May 2025 – Present',
+    period: 'May 2025 – July 2025',
     location: 'Alpharetta, GA',
     icon: HiCode,
     description: [
-      'Engineered and deployed a full-stack inventory management web application with React, Flask, and Supabase, significantly streamlining asset tracking and reducing manual data entry by 70%.',
-      'Provided advanced technical support to over 300 telehealth providers, leveraging Salesforce for case management and Bomgar for remote troubleshooting, resolving complex software and access issues efficiently.',
-      'Created detailed documentation and instructional guides for internal systems including LT Telehealth and LTOE, enhancing user proficiency and reducing repeat support requests by 25%.'
+      'Engineered full-stack web applications with React, Flask, and Supabase, adding secure authentication, role-based access, and real-time data sync to modernize internal tools.',
+      'Developed and optimized C# APIs for a .NET platform integrated with Salesforce, Axuall, and Martech systems, enabling automated credentialing and marketing workflows.',
+      'Led API debugging and performance tuning using Postman, SQL, and logging tools while collaborating with Software Engineering, Martech, and Product teams to deliver scalable, production-ready solutions.'
     ]
   },
   {
@@ -35,9 +35,8 @@ const experiences: Experience[] = [
     location: 'Smyrna, GA',
     icon: HiSupport,
     description: [
-      'Provided technical support and troubleshooting, ensuring system reliability and user satisfaction.',
-      'Collaborated with IT specialists and clients to analyze technical requirements and deliver custom solutions.',
-      'Assisted in building small business inventory management systems, contributing to full software lifecycle.'
+      'Developed internal web tools for asset tracking and reporting, improving client visibility and reducing support response times.',
+      'Provided remote and on-site support for hardware, software, and networking issues, ensuring system reliability for small business clients.'
     ]
   },
   {
@@ -47,10 +46,8 @@ const experiences: Experience[] = [
     location: 'Alpharetta, GA',
     icon: HiBriefcase,
     description: [
-      'Utilized Salesforce to streamline prospect management and customer data analysis, enhancing lead processing and customer engagement.',
-      'Collaborated on cross-functional teams to identify process improvements in the e-commerce workflow, proposing solutions implemented in subsequent project updates.',
-      'Supported the launch of the Partner Program for online orders, improving customer engagement and site usage.',
-      'Collaborated with the digital product team to improve customer experience on the e-commerce platform.'
+      'Automated lead management processes in Salesforce by designing optimized workflows and data validation rules.',
+      'Collaborated with e-commerce dev teams on platform enhancements, improving user engagement and online ordering efficiency.'
     ]
   }
 ];
