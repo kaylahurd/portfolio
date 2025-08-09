@@ -242,9 +242,13 @@ export default function Resume() {
 
         {/* Download Resume Button */}
         <div className="text-center">
-          <button className="bg-custom-pink-500 text-white px-6 py-3 rounded-md hover:bg-custom-pink-600 transition-colors shadow-md hover:shadow-lg">
+          <a 
+            href="/KaylaResume.pdf" 
+            download="KaylaHurd_Resume.pdf"
+            className="inline-block bg-custom-pink-500 text-white px-6 py-3 rounded-md hover:bg-custom-pink-600 transition-colors shadow-md hover:shadow-lg"
+          >
             Download Resume PDF
-          </button>
+          </a>
         </div>
       </motion.div>
     </div>
