@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kayla Hurd - Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js and Tailwind CSS showcasing my skills, experience, and projects.
 
-First, run the development server:
+## 🌐 Live Website
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Access my portfolio at:**
+- **Short URL**: [https://tinyurl.com/yc829xyu](https://tinyurl.com/yc829xyu)
+- **Direct URL**: [https://portfolio-2u6spbuwm-kayla-hurds-projects.vercel.app](https://portfolio-2u6spbuwm-kayla-hurds-projects.vercel.app)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Responsive Design** - Optimized for all devices
+- **Modern UI** - Clean, professional interface with custom color scheme
+- **Smooth Animations** - Framer Motion animations for enhanced user experience
+- **Interactive Elements** - Hover effects and smooth transitions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📱 Pages
 
-## Learn More
+- **Home** - Introduction and featured sections
+- **About** - Personal information, skills, and experience
+- **Experience** - Detailed work history and responsibilities
+- **Projects** - Portfolio of technical projects and applications
+- **Resume** - Comprehensive resume with downloadable PDF
+- **Contact** - Contact information and social links
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend**: Next.js 14, React, TypeScript
+- **Styling**: Tailwind CSS, custom CSS
+- **Animations**: Framer Motion
+- **Icons**: React Icons (Heroicons)
+- **Deployment**: Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Getting Started
 
-## Deploy on Vercel
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run development server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Resume Download
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The website includes a downloadable PDF version of my resume accessible from the Resume page.
+
+## 🔗 Connect With Me
+
+- **Email**: kaylahurd39@gmail.com
+- **LinkedIn**: [linkedin.com/in/kayla-hurd](https://linkedin.com/in/kayla-hurd)
+- **GitHub**: [github.com/kaylahurd](https://github.com/kaylahurd)
+
+---
+
+*Built with ❤️ using Next.js and Tailwind CSS*
